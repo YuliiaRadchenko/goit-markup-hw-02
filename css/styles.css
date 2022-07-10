@@ -72,7 +72,7 @@ ul {
   text-transform: uppercase;
 }
 
-.button {
+.button-active {
   color: var(--main-bg-color);
   background-color: var(--accent-text-color);
   font-weight: 700;
@@ -115,6 +115,35 @@ ul {
 
 .team-members .position {
   font-size: 16px;
+}
+
+/* Portfolio */
+.portfolio .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+}
+
+.portfolio .category {
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.button {
+  color: var(--title-text-color);
+  background-color: var(--light-bg-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--main-bg-color);
+  background-color: var(--accent-text-color);
 }
 
 /* Footer */
