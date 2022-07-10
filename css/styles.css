@@ -1,12 +1,153 @@
-body {
-  background-color: #FFFFFF;
-  color: #212121;
+:root {
+  --main-text-color: #757575;
+  --title-text-color: #212121;
+  --logo-top-color: #000000;
+  --accent-text-color: #2196F3;
+  --main-bg-color: #ffffff;
+  --dark-bg-color: #2F303A;
+  --light-bg-color: #F5F4FA;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
-/* Основний колір заголовків (чорний) #212121 */
-/* Акцентний колір заголовків (блакитний) #2196F3 */
-/* Акцентний колір тексту (білий) #FFFFFF */
+body {
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Header */
+.logo {
+  color: var(--accent-text-color);
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 700;
+  font-family: 'Raleway', 'Tahoma', sans-serif;
+}
+
+.top {
+  color: var(--logo-top-color);
+}
+
+.site-nav .link {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.contact-nav .link {
+  color: var(--main-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus,
+.contact-nav .link:hover,
+.contact-nav .link:focus {
+  color: var(--accent-text-color);
+}
+
+/* Hero */
+.hero {
+  background-color: var(--dark-bg-color);
+}
+
+.hero-title {
+  color: var(--main-bg-color);
+  font-weight: 900;
+  font-size: 44px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  color: var(--main-bg-color);
+  background-color: var(--accent-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
+
+/* Section */
+.section-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* Peculiarities */
+.peculiarities .title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+/* Team */
+.team {
+  background-color: var(--light-bg-color);
+}
+
+.team-members .title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+}
+
+.team-members .position {
+  font-size: 16px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--dark-bg-color);
+}
+
+.down {
+  color: var(--main-bg-color);
+}
+
+.address {
+  color: var(--main-bg-color);
+  letter-spacing: 0.03em;
+  font-style: normal;
+}
+
+.footer-contacts .link {
+  color: var(--footer-contacts-color);
+  text-decoration: none;
+  font-style: normal;
+  letter-spacing: 0.03em;
+}
+
+.footer-contacts .link:hover,
+.footer-contacts .link:focus {
+  color: var(--accent-text-color);
+}
+
 /* Колір секцій тексту (сірий) #757575 */
-/* Футер rgba(255, 255, 255, 0.6) */
-/* Колір фону #FFFFFF */
-/* Акцентний колір фону #2F303A */
+/* Основний колір посилань, заголовків (чорний) #212121 */
+/* Акцентний колір посилань (блакитний) #2196F3 */
+/* Основний колір фону Хедер, Секція_2 (білий) #FFFFFF */
+/* Акцентний колір фону Секція_1, Футер (темно сірий) #2F303A */
+/* Акцентний колір фону Секція_3 (молочно білий) #F5F4FA */
+/* Колір контактів футер rgba(255, 255, 255, 0.6) */
