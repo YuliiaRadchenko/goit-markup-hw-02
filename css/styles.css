@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --logo-top-color: #000000;
   --accent-text-color: #2196F3;
+  --accent-button-color: #188CE8;
   --main-bg-color: #ffffff;
   --dark-bg-color: #2F303A;
   --light-bg-color: #F5F4FA;
@@ -16,12 +17,15 @@ body {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  letter-spacing: 0.03em;
+  line-height: 1.714;
 }
 
 ul {
   list-style: none;
 }
 
+/* Main Page */
 /* Header */
 .logo {
   color: var(--accent-text-color);
@@ -29,13 +33,14 @@ ul {
   font-size: 26px;
   font-weight: 700;
   font-family: 'Raleway', 'Tahoma', sans-serif;
+  line-height: 1.2;
 }
 
-.top {
+.logo-top {
   color: var(--logo-top-color);
 }
 
-.site-nav .link {
+.nav-list .nav-link {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -43,7 +48,7 @@ ul {
   text-decoration: none;
 }
 
-.contact-nav .link {
+.contacts-list .contacts-link {
   color: var(--main-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -51,10 +56,14 @@ ul {
   text-decoration: none;
 }
 
-.site-nav .link:hover,
-.site-nav .link:focus,
-.contact-nav .link:hover,
-.contact-nav .link:focus {
+.nav-list .nav-link:hover,
+.nav-list .nav-link:focus,
+.contacts-list .contacts-link:hover,
+.contacts-list .contacts-link:focus {
+  color: var(--accent-text-color);
+}
+
+.nav-list .nav-link.current {
   color: var(--accent-text-color);
 }
 
@@ -70,11 +79,13 @@ ul {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  line-height: 1.364;
 }
 
-.button-active {
+.hero-button {
   color: var(--main-bg-color);
   background-color: var(--accent-text-color);
+  font-family: 'Roboto', 'Tahoma', sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -84,21 +95,30 @@ ul {
   letter-spacing: 0.06em;
 }
 
-/* Section */
-.section-title {
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-button-color);
+}
+
+/* Sections common */
+.features-title,
+.activities-title,
+.team-title,
+.portfolio-title {
   color: var(--title-text-color);
+  font-size: 14px;
   font-weight: 700;
   font-size: 36px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 
 /* Peculiarities */
-.peculiarities .title {
+.features-list-title {
   color: var(--title-text-color);
+  font-size: 14px;
   font-weight: 700;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
+  line-height: 1.14;
 }
 
 /* Team */
@@ -106,71 +126,84 @@ ul {
   background-color: var(--light-bg-color);
 }
 
-.team-members .title {
+.team-list .team-list-title {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.03em;
 }
 
-.team-members .position {
+.team-list .team-list-text {
   font-size: 16px;
 }
 
-/* Portfolio */
-.portfolio .title {
-  color: var(--title-text-color);
-  font-weight: 700;
-  font-size: 18px;
-  letter-spacing: 0.06em;
+.team-list-item {
+  background-color: var(--main-bg-color);
 }
 
-.portfolio .category {
-  font-size: 16px;
-  letter-spacing: 0.03em;
-}
-
-.button {
-  color: var(--title-text-color);
-  background-color: var(--light-bg-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.625;
-  text-align: center;
-  letter-spacing: 0.03em;
-}
-
-.button:hover,
-.button:focus {
-  color: var(--main-bg-color);
-  background-color: var(--accent-text-color);
-}
 
 /* Footer */
 .footer {
   background-color: var(--dark-bg-color);
 }
 
-.down {
+.logo-down {
   color: var(--main-bg-color);
 }
 
-.address {
+.address-text {
   color: var(--main-bg-color);
   letter-spacing: 0.03em;
   font-style: normal;
 }
 
-.footer-contacts .link {
+.address-contacts .address-link {
   color: var(--footer-contacts-color);
   text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
 }
 
-.footer-contacts .link:hover,
-.footer-contacts .link:focus {
+.address-contacts .address-link:hover,
+.address-contacts .address-link:focus {
   color: var(--accent-text-color);
+}
+
+
+/* Portfolio Page*/
+.cards-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.cards-category {
+  color: var(--main-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button {
+  color: var(--title-text-color);
+  background-color: var(--light-bg-color);
+  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-button:hover,
+.portfolio-button:focus {
+  color: var(--main-bg-color);
+  background-color: var(--accent-text-color);
+}
+
+.cards-link {
+  text-decoration: none;
 }
 
 /* Колір секцій тексту (сірий) #757575 */
