@@ -1,38 +1,47 @@
 :root {
+  /* fonts */
+  --main-font: 'Roboto';
+  --secondary-font: 'Raleway';
+  
+  /* text colors */
   --main-text-color: #757575;
   --title-text-color: #212121;
   --logo-top-color: #000000;
   --accent-text-color: #2196F3;
   --accent-button-color: #188CE8;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+
+  /* bg colors */
   --main-bg-color: #ffffff;
   --dark-bg-color: #2F303A;
   --light-bg-color: #F5F4FA;
-  --footer-contacts-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   background-color: var(--main-bg-color);
   color: var(--main-text-color);
-  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-size: 14px;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0.03em;
   line-height: 1.714;
 }
 
-ul {
-  list-style: none;
-}
+/* Common styles start */
+  .link {
+    text-decoration: none;
+  }
+
+  .list {
+    list-style: none;
+  }
+/* Common styles end */
 
 /* Main Page */
 /* Header */
 .logo {
   color: var(--accent-text-color);
-  text-decoration: none;
   font-size: 26px;
   font-weight: 700;
-  font-family: 'Raleway', 'Tahoma', sans-serif;
+  font-family: var(--secondary-font), sans-serif;
   line-height: 1.2;
 }
 
@@ -45,7 +54,6 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .contacts-list .contacts-link {
@@ -53,7 +61,6 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  text-decoration: none;
 }
 
 .nav-list .nav-link:hover,
@@ -85,7 +92,7 @@ ul {
 .hero-button {
   color: var(--main-bg-color);
   background-color: var(--accent-text-color);
-  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -159,7 +166,6 @@ ul {
 
 .address-contacts .address-link {
   color: var(--footer-contacts-color);
-  text-decoration: none;
   font-style: normal;
   letter-spacing: 0.03em;
 }
@@ -189,7 +195,7 @@ ul {
 .portfolio-button {
   color: var(--title-text-color);
   background-color: var(--light-bg-color);
-  font-family: 'Roboto', 'Tahoma', sans-serif;
+  font-family: var(--main-font), sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.63;
@@ -202,9 +208,6 @@ ul {
   background-color: var(--accent-text-color);
 }
 
-.cards-link {
-  text-decoration: none;
-}
 
 /* Колір секцій тексту (сірий) #757575 */
 /* Основний колір посилань, заголовків (чорний) #212121 */
